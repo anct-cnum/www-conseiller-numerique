@@ -1,0 +1,143 @@
+
+
+/***** LOGO *****/
+
+.rf-sur-mesure {
+  flex: none;
+  padding-right: 0;
+}
+.logo-conseiller-numerique {
+  flex: none;
+  padding-left: .5rem;
+}
+.logo-france-relance {
+  height: 90px;
+}
+
+
+/***** TYPOGRAPHIE *****/
+
+h1 {
+  margin: 0;
+}
+h4, h5 {
+  margin-bottom: 1rem;
+}
+.titrage {
+  font-size: 56px;
+  line-height: 1.25em;
+}
+.texte-centre {
+  text-align: center;
+}
+
+
+/***** COULEUR *****/
+
+.bleu-conseiller {
+  color: #2f29ff;
+}
+.fond-bleu-conseiller{
+  background: #2f29ff;
+}
+.bleu-secondaire {
+  color:#0067E2;
+}
+.fond-bleu-secondaire {
+  background:#0067E2;
+}
+.blanc {
+  color: #FFF;
+}
+.rouge {
+  color: #FF2D2D;
+}
+.gris {
+  color: #383838;
+}
+.contour-rouge {
+    border: 1px solid #FF2D2D!important; 
+}
+.contour-bleu {
+    border: 1px solid #2f29ff!important; 
+}
+.contour-gris {
+    border: 1px solid #383838!important; 
+}
+.fondBlanc {
+  background: white;
+}
+
+
+/****** GRILLE & MISE EN PAGE *****/ 
+
+.contenu-centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rf-header {
+  position: relative;
+  z-index: 10;
+}
+.rf-header__body {
+  margin: 0!important;
+}
+.rf-footer__content {
+  flex-direction: column-reverse;
+}
+.rf-mt-15w {
+    margin-top: 7.5rem; 
+}
+.rf-mb-15w {
+    margin-bottom: 7.5rem; 
+}
+
+/***** ILLUSTRATION *****/ 
+
+.illustration, .overlay {
+  height: 100vh;
+  min-height: 100vh;
+}
+.illustration {
+  background: url('../assets/img/paysage-societe-numerique.png') no-repeat
+  center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.overlay {
+  background: rgba(0,0,0,.25);
+}
+.etapes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.etape {
+  height: 250px ;
+}
+
+
+/****** BOUTONS *****/
+
+.rf-link {
+  font-size: 16px!important;
+  line-height: 1.5rem;
+}
+:root:not([data-theme=dark]) .rf-btn, :root:not([data-theme=dark]) [class*="--scheme-light-"] .rf-btn, :root:not([data-theme=dark]) [class*=rf-scheme-light] .rf-btn {
+    --color-hover: none;
+    --color-active: none;
+}
+@media (hover: hover) and (pointer: fine)
+.rf-btn:not(:disabled):active, .rf-btn:not([disabled]):active {
+    background-image: none;
+}
+.big-btn {
+  display: inline-block;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 50px;
+  width: 70%;
+}
