@@ -147,3 +147,18 @@ h4, h5 {
   border-radius: 50px;
   width: 70%;
 }
+
+/***** TABLEAUX *****/ 
+
+table.conservation {
+  border-collapse: collapse;
+}
+
+table.conservation th {
+  background-color: lightgray;
+}
+
+table.conservation td, th {
+  border: solid 2px black;
+  padding: 5px;
+}
