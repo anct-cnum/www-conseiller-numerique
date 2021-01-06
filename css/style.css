@@ -144,7 +144,7 @@ h4, h5 {
   padding: 1.5rem;
   border: none;
   border-radius: 50px;
-  width: 9em;
+  width: 70%;
 }
 
 /***** TABLEAUX *****/ 
@@ -167,5 +167,9 @@ table.conservation td, th {
 @media (max-width: 800px) {
   #btn-question {
     margin-top: 3em;
+  }
+
+  .big-btn {
+    width: 9em;
   }
 }
