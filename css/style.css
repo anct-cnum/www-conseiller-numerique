@@ -102,7 +102,6 @@ h4, h5 {
 /***** ILLUSTRATION *****/ 
 
 .illustration, .overlay {
-  height: 100vh;
   min-height: 100vh;
 }
 .illustration {
@@ -145,7 +144,7 @@ h4, h5 {
   padding: 1.5rem;
   border: none;
   border-radius: 50px;
-  width: 70%;
+  width: 9em;
 }
 
 /***** TABLEAUX *****/ 
@@ -161,4 +160,12 @@ table.conservation th {
 table.conservation td, th {
   border: solid 2px black;
   padding: 5px;
+}
+
+/***** RESPONSIVE *****/ 
+
+@media (max-width: 800px) {
+  #btn-question {
+    margin-top: 3em;
+  }
 }
