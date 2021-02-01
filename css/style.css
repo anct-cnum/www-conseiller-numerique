@@ -13,8 +13,9 @@
 }
 
 .logo-conseiller-numerique img:first-child {
-  height: 48px;
-  margin-top: 1.1em;
+  height: 50px;
+  margin-top: 1em;
+  font-weight: lighter!important;
 }
 
 .logo-france-relance {
