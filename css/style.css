@@ -7,17 +7,9 @@
   padding-right: 0;
 }
 .logo-conseiller-numerique {
-  height: 67px;
-  margin-left: 1.25rem;
-  border-left: 1px solid silver;
+  flex: none;
+  padding-left: .5rem;
 }
-
-.logo-conseiller-numerique img:first-child {
-  height: 50px;
-  margin-top: 1em;
-  font-weight: lighter!important;
-}
-
 .logo-france-relance {
   height: 90px;
 }
