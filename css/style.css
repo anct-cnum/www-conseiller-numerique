@@ -13,8 +13,8 @@
 }
 
 .logo-conseiller-numerique img:first-child {
-  height: 50px;
-  margin-top: 1em;
+  height: 52px;
+  margin-top: 0.88em;
   font-weight: lighter!important;
 }
 
@@ -22,6 +22,12 @@
   height: 90px;
 }
 
+/* Surcharge pour le libellé RF */
+.rf-logo__title {
+	font-size: 1.22em!important;
+	letter-spacing: -.06em!important;
+	line-height: 1em!important;
+}
 
 /***** TYPOGRAPHIE *****/
 
