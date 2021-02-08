@@ -38,24 +38,9 @@
 }
 
 .logo-conseiller-numerique {
-  height: 75px;
-  margin-left: 1.25rem;
-  border-left: 1px solid silver;
+  flex: none;
+  padding-left: .5rem;
 }
-
-.logo-conseiller-numerique img:first-child {
-  height: 54px;
-  font-weight: lighter!important;
-  margin-top: 1.2em;
-}
-
-/* Surcharge pour le libellé RF */
-.rf-logo__title {
-	font-size: 1.22em!important;
-	letter-spacing: -.06em!important;
-  line-height: 1em!important;
-}
-
 .logo-france-relance {
   height: 90px;
 }

@@ -40,7 +40,8 @@
 
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Conseiller numérique France Services</title>
+    <title>Conseiller numérique</title>
+    <script src="js/htmlshiv.js"></script>
 </head>
 
 <body>
@@ -51,13 +52,36 @@
         <div class="rf-container">
             <div class="rf-header__body">
                 <div class="rf-header__brand rf-sur-mesure">
-                    <a href="/" title="République française">
-                        <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
+                    <a class="rf-logo" href="#" title="République française">
+                        <span class="rf-logo__title">
+                            République
+                            <br />française
+                        </span>
                     </a>
                 </div>
                 <div class="rf-header__operator logo-conseiller-numerique">
-                    <img src="assets/img/logos/logo-conseiller-numerique.svg" alt="logo conseiller numérique France Services">
+                    <img src="assets/img/logos/logo-conseiller-numerique.svg" alt="logo conseiller numérique"
+                        style="height:70px;">
                 </div>
+
+                <div class="rf-header__tools">
+                    <div class="rf-shortcuts">
+                        <ul class="rf-nav__list">
+                            <li class="rf-nav__item">
+                                <a href="aide-candidat" class="rf-link" target="_self">À propos des candidats</a>
+                            </li>
+                            <li class="rf-nav__item">
+                                <a href="aide-structure" class="rf-link" target="_self">À propos des structures</a>
+                            </li>
+                            <li class="rf-nav__item">
+                                <a href="https://aide.conseiller-numerique.gouv.fr/fr/" class="rf-link" target="_self">J'ai une question</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
                 <div class="rf-header__tools">
                     <div class="rf-shortcuts">
@@ -170,53 +194,56 @@
     <!--FOOTER-->
     <footer class="rf-footer" role="contentinfo" id="">
         <div class="rf-container">
-          <div class="rf-footer__body">
-            <div class="rf-footer__brand">
-              <div class="rf-header__brand rf-sur-mesure">
-                <a href="/" title="République française">
-                    <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
-                </a>
+            <div class="rf-footer__body">
+                <div class="rf-footer__brand">
+                    <a class="rf-logo" href="#" title="république<br>française">
+                        <span class="rf-logo__title">république
+                            <br>française</span>
+                    </a>
+                    <img src="assets/img/logos/logo-france-relance-alt.svg" class="logo-france-relance"
+                        style="padding-left: 3em;">
+                </div>
+                <div class="rf-footer__content">
+                    <ul class="rf-footer__content-links">
+                        <li>
+                            <a href="https://agence-cohesion-territoires.gouv.fr">Agence Nationale de la Cohésion des
+                                Territoires</a>
+                        </li>
+                        <li>
+                            <a href="https://societenumerique.gouv.fr">Mission Sociétés Numérique</a>
+                        </li>
+                        <li>
+                            <a href="https://incubateur.anct.gouv.fr">Incubateur des territoires</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="rf-header__operator logo-conseiller-numerique-footer">
-                <img src="assets/img/logos/france-relance-france-services.svg" alt="logo conseiller numérique France Services" style="height: 70px;">
+            <div class="rf-footer__bottom">
+                <ul class="rf-footer__bottom-list">
+                    <li>
+                        <a href="https://aide.conseiller-numerique.gouv.fr/fr/">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="accessibilite">Accessibilité : non conforme</a>
+                    </li>
+                    <li>
+                        <a href="mentions-legales">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="confidentialite">Données personnelles</a>
+                    </li>
+                    <li>
+                        <a href="cgu">Conditions générales d'utilisation</a>
+                    </li>
+                </ul>
+                <div class="rf-footer__bottom-copy">
+                    © République Française 2021
+                </div>
             </div>
-            </div>
-            <div class="rf-footer__content">
-              <ul class="rf-footer__content-links">
-                <li>
-                  <a href="https://agence-cohesion-territoires.gouv.fr">Agence Nationale de la Cohésion des
-                    Territoires</a>
-                </li>
-                <li>
-                  <a href="https://societenumerique.gouv.fr">Programme Société Numérique</a>
-                </li>
-                <li>
-                  <a href="https://incubateur.anct.gouv.fr">Incubateur des territoires</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="rf-footer__bottom">
-            <ul class="rf-footer__bottom-list">
-              <li>
-                <a href="https://aide.conseiller-numerique.gouv.fr/fr/">FAQ</a>
-              </li>
-              <li>
-                <a href="accessibilite">Accessibilité : non conforme</a>
-              </li>
-              <li>
-                <a href="mentions-legales">Mentions légales</a>
-              </li>
-              <li>
-                <a href="https://cellar-c2.services.clever-cloud.com/conseiller-numerique/CGU-Donn%C3%A9es_personnellesConseiller_Num%C3%A9rique.pdf">Conditions générales d'utilisation</a>
-              </li>
-            </ul>
-            <div class="rf-footer__bottom-copy">
-              © République Française 2021
-            </div>
-          </div>
         </div>
-      </footer>
+    </footer>
+
+
 
     <!-- Matomo -->
     <script type="text/javascript">
@@ -234,7 +261,6 @@
     </script>
     <!-- End Matomo Code -->
 
-    <script src="js/html5shiv.min.js"></script>
     <script src="js/all.min.js"></script>
 </body>
 
