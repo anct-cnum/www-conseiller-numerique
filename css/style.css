@@ -5,23 +5,60 @@
 .rf-sur-mesure {
   flex: none;
   padding-right: 0;
+  height: 75px;
 }
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.logo-conseiller-numerique-footer {
+  height: 75px;
+  margin-left: 1.25rem;
+}
+
+.logo-conseiller-numerique-footer img:first-child {
+  height: 54px;
+  font-weight: lighter!important;
+}
+
+.header__logo-rf {
+	height: 78px;
+}
+
+.logo-france-services {
+  margin-top: 20px;
+  height: 120px;
+}
+.rf-footer__brand {
+  flex-basis: calc(100%/3);
+  padding-right: 1rem;
+  flex-wrap: wrap;
+}
+
 .logo-conseiller-numerique {
-  height: 67px;
+  height: 75px;
   margin-left: 1.25rem;
   border-left: 1px solid silver;
 }
 
 .logo-conseiller-numerique img:first-child {
-  height: 50px;
-  margin-top: 1em;
+  height: 54px;
   font-weight: lighter!important;
+  margin-top: 1.2em;
+}
+
+/* Surcharge pour le libellé RF */
+.rf-logo__title {
+	font-size: 1.22em!important;
+	letter-spacing: -.06em!important;
+  line-height: 1em!important;
 }
 
 .logo-france-relance {
   height: 90px;
 }
-
 
 /***** TYPOGRAPHIE *****/
 
@@ -70,20 +107,20 @@ h4, h5 {
   color: #383838;
 }
 .contour-rouge {
-    border: 1px solid #FF2D2D!important; 
+    border: 1px solid #FF2D2D!important;
 }
 .contour-bleu {
-    border: 1px solid #2f29ff!important; 
+    border: 1px solid #2f29ff!important;
 }
 .contour-gris {
-    border: 1px solid #383838!important; 
+    border: 1px solid #383838!important;
 }
 .fondBlanc {
   background: white;
 }
 
 
-/****** GRILLE & MISE EN PAGE *****/ 
+/****** GRILLE & MISE EN PAGE *****/
 
 .contenu-centre {
   display: flex;
@@ -98,16 +135,17 @@ h4, h5 {
   margin: 0!important;
 }
 .rf-footer__content {
-  flex-direction: column-reverse;
+  display: block;
+  flex-wrap: inherit;
 }
 .rf-mt-15w {
-    margin-top: 7.5rem; 
+    margin-top: 7.5rem;
 }
 .rf-mb-15w {
-    margin-bottom: 7.5rem; 
+    margin-bottom: 7.5rem;
 }
 
-/***** ILLUSTRATION *****/ 
+/***** ILLUSTRATION *****/
 
 .illustration, .overlay {
   min-height: 100vh;
@@ -158,7 +196,7 @@ h4, h5 {
   width: 70%;
 }
 
-/***** TABLEAUX *****/ 
+/***** TABLEAUX *****/
 
 table.conservation {
   border-collapse: collapse;
@@ -173,7 +211,13 @@ table.conservation td, th {
   padding: 5px;
 }
 
-/***** RESPONSIVE *****/ 
+/***** RESPONSIVE *****/
+
+@media (max-width: 940px) {
+  .logo-france-relance {
+    padding-left: 0em;
+  }
+}
 
 @media (max-width: 800px) {
   .illustration h1 {
@@ -190,6 +234,16 @@ table.conservation td, th {
 
   .big-btn {
     width: 80%;
+  }
+
+  .logo-france-relance {
+    padding-left: 1.5em;
+  }
+
+  .rf-footer__brand {
+    flex-basis: inherit;
+    padding-right: inherit;
+    flex-wrap: inherit;
   }
 
   .rf-footer__bottom-list > li.confidentialite {
