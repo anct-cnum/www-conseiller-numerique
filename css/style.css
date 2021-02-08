@@ -7,6 +7,12 @@
   padding-right: 0;
   height: 75px;
 }
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 .logo-conseiller-numerique {
   height: 75px;
   margin-left: 1.25rem;
@@ -22,6 +28,22 @@
 .header__logo-rf {
 	height: 78px;
 }
+
+.logo-france-services {
+  margin-top: 20px;
+  height: 120px;
+}
+.rf-footer__brand {
+  flex-basis: calc(100%/3);
+  padding-right: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Surcharge pour le libellé RF */
+.rf-logo__title {
+	font-size: 1.22em!important;
+	letter-spacing: -.06em!important;
+	line-height: 1em!important;
 
 .logo-france-relance {
   height: 90px;
@@ -102,7 +124,8 @@ h4, h5 {
   margin: 0!important;
 }
 .rf-footer__content {
-  flex-direction: column-reverse;
+  display: block;
+  flex-wrap: inherit;
 }
 .rf-mt-15w {
     margin-top: 7.5rem; 
@@ -179,6 +202,12 @@ table.conservation td, th {
 
 /***** RESPONSIVE *****/ 
 
+@media (max-width: 940px) {
+  .logo-france-relance {
+    padding-left: 0em;
+  }
+}
+
 @media (max-width: 800px) {
   .illustration h1 {
     font-size: 2.5rem;
@@ -194,6 +223,16 @@ table.conservation td, th {
 
   .big-btn {
     width: 80%;
+  }
+
+  .logo-france-relance {
+    padding-left: 1.5em;
+  }
+  
+  .rf-footer__brand {
+    flex-basis: inherit;
+    padding-right: inherit;
+    flex-wrap: inherit;
   }
 
   .rf-footer__bottom-list > li.confidentialite {
