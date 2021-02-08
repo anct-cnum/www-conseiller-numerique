@@ -13,12 +13,12 @@
   height: 0;
 }
 
-.logo-conseiller-numerique {
+.logo-conseiller-numerique-footer {
   height: 75px;
   margin-left: 1.25rem;
 }
 
-.logo-conseiller-numerique img:first-child {
+.logo-conseiller-numerique-footer img:first-child {
   height: 54px;
   font-weight: lighter!important;
 }
@@ -35,6 +35,18 @@
   flex-basis: calc(100%/3);
   padding-right: 1rem;
   flex-wrap: wrap;
+}
+
+.logo-conseiller-numerique {
+  height: 75px;
+  margin-left: 1.25rem;
+  border-left: 1px solid silver;
+}
+
+.logo-conseiller-numerique img:first-child {
+  height: 54px;
+  font-weight: lighter!important;
+  margin-top: 1.2em;
 }
 
 /* Surcharge pour le libellé RF */
