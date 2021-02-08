@@ -45,7 +45,36 @@
 
 <body>
     <!--HEADER-->
-    <div data-includeHTML="header.html"></div>
+    <header class="rf-header">
+        <div class="rf-container">
+            <div class="rf-header__body">
+                <div class="rf-header__brand rf-sur-mesure">
+                    <a href="/" title="République française">
+                        <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
+                    </a>
+                </div>
+                <div class="rf-header__operator logo-conseiller-numerique">
+                    <img src="assets/img/logos/logo-conseiller-numerique.svg" alt="logo conseiller numérique France Services">
+                </div>
+    
+                <div class="rf-header__tools">
+                    <div class="rf-shortcuts">
+                        <ul class="rf-nav__list">
+                            <li class="rf-nav__item">
+                                <a href="aide-candidat" class="rf-link" target="_self">À propos des candidats</a>
+                            </li>
+                            <li class="rf-nav__item">
+                                <a href="aide-structure" class="rf-link" target="_self">À propos des structures</a>
+                            </li>
+                            <li class="rf-nav__item">
+                                <a href="https://aide.conseiller-numerique.gouv.fr/fr/" class="rf-link" target="_self">J'ai une question</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- À PROPOS -->
     <div class="rf-container rf-mb-10w">
@@ -97,7 +126,60 @@
     </div>
 
     <!--FOOTER-->
-    <div data-includeHTML="footer.html"></div>
+    <footer class="rf-footer" role="contentinfo" id="">
+        <div class="rf-container">
+          <div class="rf-footer__body">
+            <div class="rf-footer__brand">
+              <div class="rf-header__brand rf-sur-mesure">
+                <a href="/" title="République française">
+                    <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
+                </a>
+            </div>
+              <div class="rf-header__operator logo-conseiller-numerique">
+                <img src="assets/img/logos/logo-conseiller-numerique.svg" alt="logo conseiller numérique France Services" style="height: 46px;">
+            </div>
+              <img src="assets/img/logos/logo-france-relance-alt.svg" class="logo-france-relance" style="height: 77px;">
+              <div class="break"></div>
+            </div>
+            <div class="rf-footer__content">
+              <ul class="rf-footer__content-links">
+                <li>
+                  <a href="https://agence-cohesion-territoires.gouv.fr">Agence Nationale de la Cohésion des
+                    Territoires</a>
+                </li>
+                <li>
+                  <a href="https://societenumerique.gouv.fr">Programme Société Numérique</a>
+                </li>
+                <li>
+                  <a href="https://incubateur.anct.gouv.fr">Incubateur des territoires</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rf-footer__bottom">
+            <ul class="rf-footer__bottom-list">
+              <li>
+                <a href="https://aide.conseiller-numerique.gouv.fr/fr/">FAQ</a>
+              </li>
+              <li>
+                <a href="accessibilite">Accessibilité : non conforme</a>
+              </li>
+              <li>
+                <a href="mentions-legales">Mentions légales</a>
+              </li>
+              <li class="confidentialite">
+                <a href="confidentialite">Données personnelles</a>
+              </li>
+              <li>
+                <a href="cgu">Conditions générales d'utilisation</a>
+              </li>
+            </ul>
+            <div class="rf-footer__bottom-copy">
+              © République Française 2021
+            </div>
+          </div>
+        </div>
+      </footer>
 
     <!-- Matomo -->
     <script type="text/javascript">
@@ -121,7 +203,6 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/app.js"></script>
 </body>
 
 </html>
