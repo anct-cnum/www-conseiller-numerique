@@ -43,7 +43,8 @@
 .rf-logo__title {
 	font-size: 1.22em!important;
 	letter-spacing: -.06em!important;
-	line-height: 1em!important;
+  line-height: 1em!important;
+}
 
 .logo-france-relance {
   height: 90px;
