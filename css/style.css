@@ -208,6 +208,12 @@ table.conservation td, th {
 }
 
 /***** RESPONSIVE *****/
+@media (max-width: 48em) {
+  div.rf-footer__content {
+    justify-content: flex-start!important;
+  }
+
+}
 
 @media (max-width: 940px) {
   .logo-france-relance {
