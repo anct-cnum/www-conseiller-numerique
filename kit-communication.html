@@ -38,48 +38,87 @@
     <meta property="og:site_name" content="Conseiller numérique France Services" />
     <meta name="twitter:url" content="https://www.conseiller.numerique.gouv.fr" />
 
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/dsfr.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Conseiller numérique France Services</title>
 </head>
 
 <body>
-    <!--HEADER-->
-    <header class="rf-header">
-        <div class="rf-container">
-            <div class="rf-header__body">
-                <div class="rf-header__brand rf-sur-mesure">
-                    <a href="/" title="République française">
-                        <img src="assets/img/logos/logo-rf-conseiller-numerique.svg" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
-                    </a>
-                </div>
-
-                <div class="rf-header__tools">
-                    <div class="rf-shortcuts">
-                        <ul class="rf-nav__list">
-                            <li class="rf-nav__item">
-                                <a href="aide-candidat" class="rf-link" target="_self">À propos des candidats</a>
-                            </li>
-                            <li class="rf-nav__item">
-                                <a href="aide-structure" class="rf-link" target="_self">À propos des structures</a>
-                            </li>
-                            <li class="rf-nav__item">
-                                <a href="https://aide.conseiller-numerique.gouv.fr/fr/" class="rf-link" target="_self">J'ai une question</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!--HEADER-->
+  <header role="banner" class="fr-header">
+    <div class="fr-container">
+      <div class="fr-header__body-row">
+        <div class="fr-header__brand">
+          <a href="/" title="République française">
+              <img src="assets/img/logos/logo-rf-conseiller-numerique.svg" alt="République Française. Liberté Égalité Fraternité." class="header__logo-fr">
+          </a>
         </div>
-    </header>
+        <div class="fr-header__navbar">
+          <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu" aria-haspopup="menu" title="Menu" id="fr-btn-menu-mobile-4">
+              Menu
+          </button>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu">
+          <button class="fr-link--close fr-link" aria-controls="modal-menu">Fermer</button>
+          <nav class="fr-nav" role="navigation" aria-label="Menu principal">
+            <ul class="fr-nav__list">
+              <li class="fr-nav__item fr-hide-btn">
+                <a href="aide-candidat" class="fr-custom-link" target="_self">À propos des candidats</a>
+              </li>
+              <li class="fr-nav__item fr-hide-btn">
+                <a href="aide-structure" class="fr-custom-link" target="_self">À propos des structures</a>
+              </li>
+              <li class="fr-nav__item fr-hide-btn">
+                <a href="https://aide.conseiller-numerique.gouv.fr/fr/" class="fr-custom-link" target="_self">J'ai une question</a>
+              </li>
+              <li class="fr-nav__item">
+                <button class="fr-nav__btn fr-custom-link" aria-expanded="false" aria-controls="menu-liens-espaces" aria-current="true">
+                  Accès plateformes et gestion
+                </button>
+                  <div class="fr-collapse fr-menu" id="menu-liens-espaces">
+                    <ul class="fr-menu__list">
+                      <li>
+                        <a class="fr-nav__link" href="https://coop.conseiller-numerique.gouv.fr/login" target="_self">
+                          Connexion à l’espace Coop<br/>
+                          <span class="sous-titre-lien">Conseillers numériques France Services</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fr-nav__link" href="https://candidat.conseiller-numerique.gouv.fr/login" target="_self">
+                          Connexion à l’espace Candidats<br/>
+                          <span class="sous-titre-lien">Dossier personnel de candidature</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fr-nav__link" href="https://admin.conseiller-numerique.gouv.fr/login?role=structure" target="_self">
+                          Connexion à l’espace structures<br/>
+                          <span class="sous-titre-lien">Gestion des candidatures par les recruteurs</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fr-nav__link" href="https://admin.conseiller-numerique.gouv.fr/login?role=prefet" target="_self">
+                          Connexion à l’espace Préfet<br/>
+                          <span class="sous-titre-lien">Gestion des dossiers de structures</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     <!-- CONTENU DU KIT -->
-    <div class="rf-container rf-mt-15w rf-mb-15w">
+    <div class="fr-container fr-mt-15w fr-mb-15w">
       <!-- Titre -->
-      <div class="rf-grid-row rf-grid-row--gutter">
-        <div class="rf-col-1"></div>
-        <div class="rf-col-10 rf-mb-9w">
-            <h2 class="rf-h1 rf-mb-9w texte-centre" style="margin-top: 0;">Kit de communication Conseiller numérique France Services</h2>
+      <div class="fr-grid-row fr-grid-row--gutter">
+        <div class="fr-col-1"></div>
+        <div class="fr-col-10 fr-mb-9w">
+            <h2 class="fr-h1 fr-mb-9w texte-centre" style="margin-top: 0;">Kit de communication Conseiller numérique France Services</h2>
             <p>
               Vous accueillez un ou plusieurs Conseillers numériques France Services au sein de votre structure, ou vous déployez des actions dans le cadre du dispositif ? Un kit a été spécialement conçu pour valoriser le dispositif Conseiller numérique France Services sur vos différents canaux et supports de communication.
             </p>
@@ -89,9 +128,9 @@
         </div>
       </div>
       <!-- PRESENTATION DU DISPOSITIF -->
-      <div class="rf-grid-row rf-grid-row--gutter">
-        <div class="rf-col-1"></div>
-        <div class="rf-col-10 rf-mb-9w">
+      <div class="fr-grid-row fr-grid-row--gutter">
+        <div class="fr-col-1"></div>
+        <div class="fr-col-10 fr-mb-9w">
           <h4 class="h4CustomKit">Présentation du dispositif Conseiller numerique France Services</h4>
           <p>
             Cette page explicative du site de l&rsquo;ANCT donne les éléments de contexte et les informations essentielles pour prendre connaissance du dispositif Conseiller numérique France Services&nbsp;:
@@ -102,9 +141,9 @@
         </div>
       </div>
       <!-- CHARTE GRAPHIQUE -->
-      <div class="rf-grid-row rf-grid-row--gutter">
-        <div class="rf-col-1"></div>
-        <div class="rf-col-10 rf-mb-9w">
+      <div class="fr-grid-row fr-grid-row--gutter">
+        <div class="fr-col-1"></div>
+        <div class="fr-col-10 fr-mb-9w">
           <h4 class="h4CustomKit">Charte Graphique</h4>
           <p>
             Ce document détaille les consignes d&rsquo;utilisation du logo Conseiller numérique Frances Services ainsi que les cas d&rsquo;usages pour la production de supports de communication en lien avec le dispositif&nbsp;:
@@ -115,9 +154,9 @@
         </div>
       </div>
       <!-- LOGOTYPES -->
-      <div class="rf-grid-row rf-grid-row--gutter">
-        <div class="rf-col-1"></div>
-        <div class="rf-col-10 rf-mb-9w">
+      <div class="fr-grid-row fr-grid-row--gutter">
+        <div class="fr-col-1"></div>
+        <div class="fr-col-10 fr-mb-9w">
           <h4 class="h4CustomKit">Logotypes</h4>
           <p>
             <a href="https://cdn.conseiller-numerique.gouv.fr/kit-communication/LogosCnfsPng.zip" title="logo Conseiller numérique France Services png" class="bleu-france" style="box-shadow: none;" target="_blank">Télécharger le logo Conseiller numérique France Services aux formats PNG (petit, moyen, grand).</a>
@@ -128,13 +167,13 @@
           <p>
             <span class="boldText">Versions alternatives&nbsp;:</span>
             <br/>
-            <a href="https://cdn.conseiller-numerique.gouv.fr/kit-communication/logo-rf-conseiller-numerique-860px.png" title="logo Conseiller numérique France Services png avec bloc Marianne" class="bleu-france" style="box-shadow: none;" target="_blank">Télécharger le logo Conseiller numérique France Services incluant le bloc Marianne au format PNG</a>
+            <a href="https://cdn.conseiller-numerique.gouv.fr/kit-communication/logo-fr-conseiller-numerique-860px.png" title="logo Conseiller numérique France Services png avec bloc Marianne" class="bleu-france" style="box-shadow: none;" target="_blank">Télécharger le logo Conseiller numérique France Services incluant le bloc Marianne au format PNG</a>
             &nbsp;(réservé au communications institutionnelles).
             <br/>
-            <a href="https://cdn.conseiller-numerique.gouv.fr/kit-communication/logo-rf-conseiller-numerique.eps" title="logo Conseiller numérique France Services eps avec bloc Marianne" class="bleu-france" style="box-shadow: none;" target="_blank">Télécharger le logo Conseiller numérique France Services incluant le bloc Marianne au format EPS</a>
+            <a href="https://cdn.conseiller-numerique.gouv.fr/kit-communication/logo-fr-conseiller-numerique.eps" title="logo Conseiller numérique France Services eps avec bloc Marianne" class="bleu-france" style="box-shadow: none;" target="_blank">Télécharger le logo Conseiller numérique France Services incluant le bloc Marianne au format EPS</a>
             &nbsp;(réservé au communications institutionnelles).
             <br/>
-            <a href="https://cdn.conseiller-numerique.gouv.fr/kit-communication/logo-rf-conseiller-numerique-nb.eps" title="logo Conseiller numérique France Services fond transparent eps" class="bleu-france" style="box-shadow: none;" target="_blank">Télécharger le logo Conseiller numérique France Services blanc</a>
+            <a href="https://cdn.conseiller-numerique.gouv.fr/kit-communication/logo-fr-conseiller-numerique-nb.eps" title="logo Conseiller numérique France Services fond transparent eps" class="bleu-france" style="box-shadow: none;" target="_blank">Télécharger le logo Conseiller numérique France Services blanc</a>
             &nbsp;(fond transparent, au format EPS).
           </p>
           <p>
@@ -147,9 +186,9 @@
         </div>
       </div>
       <!-- GABARITS RS -->
-      <div class="rf-grid-row rf-grid-row--gutter">
-        <div class="rf-col-1"></div>
-        <div class="rf-col-10 rf-mb-9w">
+      <div class="fr-grid-row fr-grid-row--gutter">
+        <div class="fr-col-1"></div>
+        <div class="fr-col-10 fr-mb-9w">
           <h4 class="h4CustomKit">Gabarits pour les réseaux sociaux</h4>
           <p>
             Personnalisables avec le texte de votre choix, ils vous permettent d&rsquo;annoncer sur les réseaux sociaux que vous accueillez un ou plusieurs Conseillers numériques France Services ou que vous menez une action en lien avec le dispositif.
@@ -160,9 +199,9 @@
         </div>
       </div>
       <!-- MODELE DE CARTE DE VISITE -->
-      <div class="rf-grid-row rf-grid-row--gutter">
-        <div class="rf-col-1"></div>
-        <div class="rf-col-10">
+      <div class="fr-grid-row fr-grid-row--gutter">
+        <div class="fr-col-1"></div>
+        <div class="fr-col-10">
           <h4 class="h4CustomKit">Modèle de carte de visite Conseiller numérique France Services</h4>
           <p>
             &Agrave; destination des conseillers débutant leur mission, ou souhaitant mettre à jour leurs informations professionnelles, ce fichier permet de personnaliser et d&rsquo;imprimer dix cartes de visites par planche (format de papier recommandé&nbsp;: bristol&nbsp;&gt;&nbsp;200g).
@@ -177,55 +216,61 @@
     </div>
 
     <!--FOOTER-->
-    <footer class="rf-footer" role="contentinfo" id="">
-        <div class="rf-container">
-          <div class="rf-footer__body">
-            <div class="rf-footer__brand" style="padding-left: 0.9rem;">
-              <div class="rf-footer__brand rf-sur-mesure" style="flex-basis: auto;">
-                <a href="/" title="République française" style="box-shadow: none;">
-                    <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
-                </a>
-              </div>
-              <div class="rf-footer__operator logo-conseiller-numerique-footer">
-                <img src="assets/img/logos/logo-france-relance-alt.svg" alt="logo France Relance" style="height: 70px; margin-bottom: 7px">
-              </div>
+    <footer class="fr-footer" role="contentinfo" id="footer">
+      <div class="fr-container">
+        <div class="fr-footer__body">
+          <div class="fr-footer__brand" style="padding-left: 0.9rem;">
+            <div class="fr-footer__brand fr-sur-mesure" style="flex-basis: auto;">
+              <a href="/" title="République française" style="box-shadow: none;">
+                  <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
+              </a>
             </div>
-            <div class="rf-footer__content" style="display: flex; justify-content: flex-end;">
-              <ul class="rf-footer__content-links" style="flex-direction: column;">
-                <li style="margin-right: 0">
-                  <a href="https://agence-cohesion-territoires.gouv.fr">Agence Nationale de la Cohésion des
-                    Territoires</a>
-                </li>
-                <li style="margin-right: 0">
-                  <a href="https://societenumerique.gouv.fr">Programme Société Numérique</a>
-                </li>
-                <li style="margin-right: 0">
-                  <a href="https://incubateur.anct.gouv.fr">Incubateur des territoires</a>
-                </li>
-              </ul>
+            <div class="fr-footer__operator logo-conseiller-numerique-footer">
+              <img src="assets/img/logos/logo-france-relance-alt.svg" alt="logo France Relance" style="height: 70px; margin-bottom: 7px">
             </div>
           </div>
-          <div class="rf-footer__bottom">
-            <ul class="rf-footer__bottom-list">
-              <li>
-                <a href="https://aide.conseiller-numerique.gouv.fr/fr/">FAQ</a>
-              </li>
-              <li>
-                <a href="accessibilite">Accessibilité : non conforme</a>
-              </li>
-              <li>
-                <a href="mentions-legales">Mentions légales</a>
-              </li>
-              <li>
-                <a href="https://cdn.conseiller-numerique.gouv.fr/CGU-Donn%C3%A9es_personnellesConseiller_Num%C3%A9rique.pdf">Conditions générales d'utilisation</a>
-              </li>
+          <div class="fr-footer__content" style="display: flex; justify-content: flex-end;">
+            <ul class="fr-footer__content-list" style="flex-direction: column;">
+                <li class="fr-footer__content-item">
+                    <a class="fr-footer__content-link" href="https://agence-cohesion-territoires.gouv.fr">
+                      Agence Nationale de la Cohésion des Territoires</a>
+                </li>
+                <li class="fr-footer__content-item">
+                    <a class="fr-footer__content-link" href="https://societenumerique.gouv.fr">
+                      Programme Société Numérique
+                    </a>
+                </li>
+                <li class="fr-footer__content-item">
+                    <a class="fr-footer__content-link" href="https://incubateur.anct.gouv.fr">
+                      Incubateur des territoires
+                    </a>
+                </li>
             </ul>
-            <div class="rf-footer__bottom-copy">
-              © République Française 2021
-            </div>
-          </div>
         </div>
-      </footer>
+
+        </div>
+        <div class="fr-footer__bottom">
+          <ul class="fr-footer__bottom-list">
+              <li class="fr-footer__bottom-item">
+                  <a class="fr-footer__bottom-link" href="https://aide.conseiller-numerique.gouv.fr/fr/">FAQ</a>
+              </li>
+              <li class="fr-footer__bottom-item">
+                  <a class="fr-footer__bottom-link" href="accessibilite">Accessibilité : non conforme</a>
+              </li>
+              <li class="fr-footer__bottom-item">
+                  <a class="fr-footer__bottom-link" href="mentions-legales">Mentions légales</a>
+              </li>
+              <li class="fr-footer__bottom-item">
+                  <a class="fr-footer__bottom-link" href="https://cdn.conseiller-numerique.gouv.fr/CGU-Donn%C3%A9es_personnellesConseiller_Num%C3%A9rique.pdf">Conditions générales d'utilisation</a>
+              </li>
+          </ul>
+          <div class="fr-footer__bottom-copy">
+              <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">licence etalab-2.0</a>
+              </p>
+          </div>
+      </div>
+      </div>
+    </footer>
 
     <!-- Matomo -->
     <script type="text/javascript">
@@ -244,7 +289,8 @@
     <!-- End Matomo Code -->
 
     <script src="js/html5shiv.min.js"></script>
-    <script src="js/all.min.js"></script>
+    <script type="module" src="js/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="js/dsfr.nomodule.min.js"></script>
 </body>
 
 </html>
