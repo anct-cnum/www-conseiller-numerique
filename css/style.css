@@ -2,7 +2,7 @@
 
 /***** LOGO *****/
 
-.rf-sur-mesure {
+.fr-sur-mesure {
   flex: none;
   padding-right: 0;
   height: 75px;
@@ -23,11 +23,11 @@
   font-weight: lighter!important;
 }
 
-.header__logo-rf {
+.header__logo-fr {
 	height: 78px;
 }
 
-.rf-footer__brand {
+.fr-footer__brand {
   flex-basis: calc(100%/3);
   padding-right: 1rem;
   flex-wrap: wrap;
@@ -45,8 +45,8 @@
   margin-top: 1.2em;
 }
 
-/* Surcharge pour le libellé RF */
-.rf-logo__title {
+/* Surcharge pour le libellé FR */
+.fr-logo__title {
 	font-size: 1.22em!important;
 	letter-spacing: -.06em!important;
   line-height: 1em!important;
@@ -71,7 +71,10 @@ h4, h5 {
 .texte-centre {
   text-align: center;
 }
-
+.contenu-centre {
+  text-align: center;
+  width: 100%;
+}
 .list-dash li {
   list-style: none;
 }
@@ -89,7 +92,17 @@ h4, h5 {
   font-weight: 700;
   font-style: normal;
 }
-
+.fr-text--lg {
+  line-height: 1.25rem !important;
+}
+.fr-h1 {
+  font-size: 3rem !important;
+}
+.sous-titre-lien {
+  font-size: 12px;
+  line-height: 24px;
+  color: #6A6A6A;
+}
 /***** COULEUR *****/
 
 .bleu-france {
@@ -132,27 +145,39 @@ h4, h5 {
 
 
 /****** GRILLE & MISE EN PAGE *****/
-
+.fr-header__brand {
+  height: 98px;
+}
 .contenu-centre {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.rf-header {
+.fr-header {
   position: relative;
   z-index: 10;
 }
-.rf-header__body {
+.fr-header__body-row, .fr-header__body {
   margin: 0!important;
+  padding: 0;
 }
-.rf-footer__content {
+.fr-menu__list {
+  width: 18rem;
+}
+.fr-menu__list li{
+  border-bottom: 1px solid #E7E7E7;
+}
+.fr-footer__content {
   display: block;
   flex-wrap: inherit;
 }
-.rf-mt-15w {
+.fr-mt-2w {
+  margin-top: 2rem !important;
+}
+.fr-mt-15w {
     margin-top: 7.5rem;
 }
-.rf-mb-15w {
+.fr-mb-15w {
     margin-bottom: 7.5rem;
 }
 
@@ -190,17 +215,37 @@ a[target=_blank]::after {
 
 
 /****** BOUTONS *****/
-
-.rf-link {
+.fr-header__body-row div.fr-header__menu ul.fr-nav__list{
+  margin-left: 15px;
+}
+.fr-btn {
+  font-size: 1rem !important;
+  line-height: 1.25rem;
+  min-height: 2.5rem;
+}
+.fr-link {
   font-size: 16px!important;
   line-height: 1.5rem;
 }
-:root:not([data-theme=dark]) .rf-btn, :root:not([data-theme=dark]) [class*="--scheme-light-"] .rf-btn, :root:not([data-theme=dark]) [class*=rf-scheme-light] .rf-btn {
+.fr-custom-link {
+  font-size: 1rem !important;
+  line-height: 1.5rem;
+  padding: 2.2rem 1rem !important;
+  color: #383838 !important;
+  height: 98px !important;
+}
+.fr-custom-link:hover {
+  background-image: linear-gradient(0deg,#9A9AFF,#9A9AFF) !important;
+}
+:root:not([data-theme=dark]) .fr-btn, :root:not([data-theme=dark]) [class*="--scheme-light-"] .fr-btn, :root:not([data-theme=dark]) [class*=fr-scheme-light] .fr-btn {
     --color-hover: none;
     --color-active: none;
 }
+.fr-footer__content-link {
+  font-size: 1rem;
+}
 @media (hover: hover) and (pointer: fine) {
-  .rf-btn:not(:disabled):active, .rf-btn:not([disabled]):active {
+  .fr-btn:not(:disabled):active, .fr-btn:not([disabled]):active {
       background-image: none;
   }
 }
@@ -228,9 +273,34 @@ table.conservation td, th {
 }
 
 /***** RESPONSIVE *****/
+@media (min-width: 992px) {
+  .fr-link--close {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .fr-hide-btn {
+    display: none;
+  }
+  .fr-link--close {
+    margin-right: 5px;
+  }
+  .fr-menu__list {
+    width: 100%;
+  }
+  .fr-custom-link {
+    text-align: right;
+    width: 100%;
+  }
+  .fr-menu .fr-nav__link {
+    width: 100%;
+  }
+}
+
 @media (max-width: 48em) {
-  div.rf-footer__content {
-    justify-content: flex-start!important;
+  div.fr-footer__content {
+    justify-content: flex-start !important;
   }
 
 }
@@ -255,26 +325,26 @@ table.conservation td, th {
     width: 80%;
   }
 
-  .rf-footer__brand {
+  .fr-footer__brand {
     flex-basis: inherit;
     padding-right: inherit;
     flex-wrap: inherit;
   }
 
-  .rf-footer__bottom-list > li.confidentialite {
+  .fr-footer__bottom-list > li.confidentialite {
     margin: 0;
   }
 
-  .rf-footer__bottom-list > li.confidentialite::before {
+  .fr-footer__bottom-list > li.confidentialite::before {
     width: 0;
     margin: 0;
   }
 
-  .rf-footer__bottom-list > li {
+  .fr-footer__bottom-list > li {
     margin: .2rem 0 0 .2rem;
   }
 
-  .rf-footer__bottom-list > li::before {
+  .fr-footer__bottom-list > li::before {
     margin: .2rem;
   }
 }

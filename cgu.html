@@ -16,21 +16,21 @@
         content="https://www.gouvernement.fr/sites/all/themes/custom/gouvernement/img/thumbnail_site.png" />
     <meta name="robots" content="noarchive" />
     <meta name="twitter:description"
-        content="Sur une durée de deux ans, l’État finance la formation et le déploiement de 4 000 Conseillers numériques France Services." />
+        content="Sur une durée de deux ans, l&rsquo;État finance la formation et le déploiement de 4 000 Conseillers numériques France Services." />
     <link rel="icon" href="assets/img/icones/favicon-32.png" type="image/png" sizes="32x32" />
     <link rel="icon" href="assets/img/icones/favicon-64.png" type="image/png" sizes="64x64" />
     <link rel="icon" href="assets/img/icones/conseiller-numerique.svg" />
     <link rel="icon" href="assets/img/icones/conseiller-numerique.png" type="image/png" />
 
     <meta name="description"
-        content="Sur une durée de deux ans, l’État finance la formation et le déploiement de 4 000 Conseillers numériques France Services." />
+        content="Sur une durée de deux ans, l&rsquo;État finance la formation et le déploiement de 4 000 Conseillers numériques France Services." />
     <meta name="twitter:title" content="Conseiller numérique France Services" />
     <meta property="og:image" content="assets/img/thumbnail_site.png" />
     <meta property="og:url" content="https://www.conseiller-numerique.gouv.fr" />
     <meta property="og:title" content="Accueil" />
     <link rel="shortcut icon" href="assets/img/icones/favicon-32-64-128-256.ico" type="image/x-icon" />
     <meta property="og:description"
-        content="Sur une durée de deux ans, l’État finance la formation et le déploiement de 4 000 Conseillers numériques France Services." />
+        content="Sur une durée de deux ans, l&rsquo;État finance la formation et le déploiement de 4 000 Conseillers numériques France Services." />
     <meta property="fb:app_id" content="" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:type" content="website" />
@@ -38,151 +38,188 @@
     <meta property="og:site_name" content="Conseiller numérique France Services" />
     <meta name="twitter:url" content="https://www.conseiller.numerique.gouv.fr" />
 
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/dsfr.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Conseiller numérique France Services</title>
 </head>
 
 <body>
-
-
-    <!--HEADER-->
-    <header class="rf-header">
-        <div class="rf-container">
-            <div class="rf-header__body">
-                <div class="rf-header__brand rf-sur-mesure">
-                    <a href="/" title="République française">
-                      <img src="assets/img/logos/logo-rf-conseiller-numerique.svg" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
-                    </a>
-                </div>
-
-                <div class="rf-header__tools">
-                    <div class="rf-shortcuts">
-                        <ul class="rf-nav__list">
-                            <li class="rf-nav__item">
-                                <a href="aide-candidat" class="rf-link" target="_self">À propos des candidats</a>
-                            </li>
-                            <li class="rf-nav__item">
-                                <a href="aide-structure" class="rf-link" target="_self">À propos des structures</a>
-                            </li>
-                            <li class="rf-nav__item">
-                                <a href="https://aide.conseiller-numerique.gouv.fr/fr/" class="rf-link" target="_self">J'ai une question</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!--HEADER-->
+  <header role="banner" class="fr-header">
+    <div class="fr-container">
+      <div class="fr-header__body-row">
+        <div class="fr-header__brand">
+          <a href="/" title="République française">
+              <img src="assets/img/logos/logo-rf-conseiller-numerique.svg" alt="République Française. Liberté Égalité Fraternité." class="header__logo-fr">
+          </a>
         </div>
-    </header>
+        <div class="fr-header__navbar">
+          <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-menu" aria-haspopup="menu" title="Menu" id="fr-btn-menu-mobile-4">
+              Menu
+          </button>
+        </div>
+        <div class="fr-header__menu fr-modal" id="modal-menu">
+          <button class="fr-link--close fr-link" aria-controls="modal-menu">Fermer</button>
+          <nav class="fr-nav" role="navigation" aria-label="Menu principal">
+            <ul class="fr-nav__list">
+              <li class="fr-nav__item fr-hide-btn">
+                <a href="aide-candidat" class="fr-custom-link" target="_self">À propos des candidats</a>
+              </li>
+              <li class="fr-nav__item fr-hide-btn">
+                <a href="aide-structure" class="fr-custom-link" target="_self">À propos des structures</a>
+              </li>
+              <li class="fr-nav__item fr-hide-btn">
+                <a href="https://aide.conseiller-numerique.gouv.fr/fr/" class="fr-custom-link" target="_self">J'ai une question</a>
+              </li>
+              <li class="fr-nav__item">
+                <button class="fr-nav__btn fr-custom-link" aria-expanded="false" aria-controls="menu-liens-espaces" aria-current="true">
+                  Accès plateformes et gestion
+                </button>
+                  <div class="fr-collapse fr-menu" id="menu-liens-espaces">
+                    <ul class="fr-menu__list">
+                      <li>
+                        <a class="fr-nav__link" href="https://coop.conseiller-numerique.gouv.fr/login" target="_self">
+                          Connexion à l&rsquo;espace Coop<br/>
+                          <span class="sous-titre-lien">Conseillers numériques France Services</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fr-nav__link" href="https://candidat.conseiller-numerique.gouv.fr/login" target="_self">
+                          Connexion à l&rsquo;espace Candidats<br/>
+                          <span class="sous-titre-lien">Dossier personnel de candidature</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fr-nav__link" href="https://admin.conseiller-numerique.gouv.fr/login?role=structure" target="_self">
+                          Connexion à l&rsquo;espace structures<br/>
+                          <span class="sous-titre-lien">Gestion des candidatures par les recruteurs</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fr-nav__link" href="https://admin.conseiller-numerique.gouv.fr/login?role=prefet" target="_self">
+                          Connexion à l&rsquo;espace Préfet<br/>
+                          <span class="sous-titre-lien">Gestion des dossiers de structures</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
     <!-- À PROPOS -->
-    <div class="rf-container rf-mb-10w">
-        <div class="rf-grid-row rf-grid-row--gutter">
-            <div class="rf-col-12 texte-centre">
-                <h2 class="rf-h1 rf-mt-10w rf-mb-5w">CONDITIONS GENERALES D’UTILISATION<br />
+    <div class="fr-container fr-mb-10w">
+        <div class="fr-grid-row fr-grid-row--gutter">
+            <div class="fr-col-12 texte-centre">
+                <h2 class="fr-h1 fr-mt-10w fr-mb-5w">CONDITIONS GENERALES D&rsquo;UTILISATION<br />
                     « Conseiller Numérique France Services »
                     </h2>
             </div>
             <div>
-                Les présentes conditions générales d’utilisation (dites « CGU ») fixent le cadre juridique de “Conseiller Numérique France Services” et définissent les conditions d’accès et d’utilisation des services par l’Utilisateur.
+                Les présentes conditions générales d&rsquo;utilisation (dites « CGU ») fixent le cadre juridique de “Conseiller Numérique France Services” et définissent les conditions d&rsquo;accès et d&rsquo;utilisation des services par l&rsquo;Utilisateur.
             </div>
             <div>
-                <div class="rf-grid-row rf-grid-row--gutter">
-                    <h3 class="bleu-secondaire">Champ d’application</h3>
+                <div class="fr-grid-row fr-grid-row--gutter">
+                    <h3 class="bleu-secondaire">Champ d&rsquo;application</h3>
                 </div>
                 <p>
-                    La plateforme est d’accès libre et gratuit à tout Utilisateur. La simple visite de la Plateforme suppose l’acceptation par tout Utilisateur des présentes CGU.
+                    La plateforme est d&rsquo;accès libre et gratuit à tout Utilisateur. La simple visite de la Plateforme suppose l&rsquo;acceptation par tout Utilisateur des présentes CGU.
                 </p>
                 <p>
-                    L’inscription sur la Plateforme peut entraîner l’application de conditions spécifiques, listées dans les présentes CGU.
+                    L&rsquo;inscription sur la Plateforme peut entraîner l&rsquo;application de conditions spécifiques, listées dans les présentes CGU.
                 </p>
             </div>
         </div>
 
         <div>
-            <div class="rf-grid-row rf-grid-row--gutter">
+            <div class="fr-grid-row fr-grid-row--gutter">
                 <h3 class="bleu-secondaire">Objet</h3>
             </div>
             <p>
-                La plateforme est à l’initiative de l’Agence Nationale de la Cohésion des Territoires, et a pour objet la transformation numérique en permettant le recrutement et la mise en relation de personnes et de structures dans le cadre du programme de transformation numérique.
+                La plateforme est à l&rsquo;initiative de l&rsquo;Agence Nationale de la Cohésion des Territoires, et a pour objet la transformation numérique en permettant le recrutement et la mise en relation de personnes et de structures dans le cadre du programme de transformation numérique.
             </p>
         </div>
 
         <div>
-            <div class="rf-grid-row rf-grid-row--gutter">
+            <div class="fr-grid-row fr-grid-row--gutter">
                 <h3 class="bleu-secondaire">Fonctionnalités</h3>
             </div>
             <h4>Inscription sur la Plateforme et fonctionnalités liées</h4>
             <p>
-                <strong>Création de l’espace personnel</strong>
+                <strong>Création de l&rsquo;espace personnel</strong>
             </p>
             <p>
-                En s’inscrivant aux services réservés, l’Utilisateur s’engage à fournir des informations sincères et exactes permettant de créer son compte ou son profil.
+                En s&rsquo;inscrivant aux services réservés, l&rsquo;Utilisateur s&rsquo;engage à fournir des informations sincères et exactes permettant de créer son compte ou son profil.
             </p>
             <p>
-                <strong>Suspension ou Suppression de l’espace personnel</strong>
+                <strong>Suspension ou Suppression de l&rsquo;espace personnel</strong>
             </p>
             <p>
                 Tout Utilisateur membre régulièrement inscrit pourra solliciter sa désinscription en se rendant à la page dédiée, en contactant dpo@anct.gouf.fr . Celle-ci sera effective dans un délai raisonnable.
             </p>
             <p>
-                L’éditeur se réserve la possibilité de supprimer ou suspendre pour une période donnée l’accès à la Plateforme pour un utilisateur, en cas de violation des présentes règles d’utilisation ou s’il estime que l’usage de la Plateforme porte préjudice à son image ou ne correspond pas aux exigences de sécurité.
+                L&rsquo;éditeur se réserve la possibilité de supprimer ou suspendre pour une période donnée l&rsquo;accès à la Plateforme pour un utilisateur, en cas de violation des présentes règles d&rsquo;utilisation ou s&rsquo;il estime que l&rsquo;usage de la Plateforme porte préjudice à son image ou ne correspond pas aux exigences de sécurité.
             </p>
         </div>
 
         <div>
-            <div class="rf-grid-row rf-grid-row--gutter">
+            <div class="fr-grid-row fr-grid-row--gutter">
                 <h3 class="bleu-secondaire">Responsabilités</h3>
             </div>
             <h4>« Conseiller Numérique France Services »</h4>
             <p>
-                <strong>Création de l’espace personnel</strong>
+                <strong>Création de l&rsquo;espace personnel</strong>
             </p>
-            <p>Les sources des informations diffusées sur le site sont réputées fiables mais le site ne garantit pas qu’il soit
-                exempt de défauts, d’erreurs ou d’omissions.
+            <p>Les sources des informations diffusées sur le site sont réputées fiables mais le site ne garantit pas qu&rsquo;il soit
+                exempt de défauts, d&rsquo;erreurs ou d&rsquo;omissions.
             </p>
             <p>
                 Tout évènement dû à un cas de force majeur ayant pour conséquence un dysfonctionnement de la Plateforme et sous
-                réserve de tout interruption ou modification en cas de maintenance, n’engage pas la responsabilité de « Conseiller
+                réserve de tout interruption ou modification en cas de maintenance, n&rsquo;engage pas la responsabilité de « Conseiller
                 Numérique ».
             </p>
             <p>
-                L’éditeur s’engage à la sécurisation de la Plateforme, notamment en prenant toutes les mesures nécessaires
+                L&rsquo;éditeur s&rsquo;engage à la sécurisation de la Plateforme, notamment en prenant toutes les mesures nécessaires
                 permettant de garantir la sécurité et la confidentialité des informations fournies.
             </p>
             <p>
-                L’éditeur fournit les moyens nécessaires et raisonnables pour assurer un accès continu, sans contrepartie
+                L&rsquo;éditeur fournit les moyens nécessaires et raisonnables pour assurer un accès continu, sans contrepartie
                 financière, à la Plateforme. Il se réserve la liberté de faire évoluer, de modifier ou de suspendre, sans préavis,
                 la plateforme pour des raisons de maintenance ou pour tout autre motif jugé nécessaire.
             </p>
             <p>
-                Ce site peut mettre à disposition des liens pouvant orienter l’Utilisateur vers des sites réalisés par des tiers.
-                Ces tiers sont les seuls responsables du contenu publié par leur soin. L’équipe n’a aucun contrôle sur le contenu de
-                ces sites. Ces contenus ne sauraient engager la responsabilité de l’administration.
+                Ce site peut mettre à disposition des liens pouvant orienter l&rsquo;Utilisateur vers des sites réalisés par des tiers.
+                Ces tiers sont les seuls responsables du contenu publié par leur soin. L&rsquo;équipe n&rsquo;a aucun contrôle sur le contenu de
+                ces sites. Ces contenus ne sauraient engager la responsabilité de l&rsquo;administration.
             </p>
             <p>
                 <strong>L'utilisateur</strong>
             </p>
             <p>
-                Toute information transmise par l'Utilisateur est de sa seule responsabilité. Il est rappelé que toute personne procédant à une fausse déclaration pour elle-même ou pour autrui s’expose, notamment, aux sanctions prévues à l’article 441-1 du code pénal, prévoyant des peines pouvant aller jusqu’à trois ans d’emprisonnement et 45 000 euros d’amende.
+                Toute information transmise par l'Utilisateur est de sa seule responsabilité. Il est rappelé que toute personne procédant à une fausse déclaration pour elle-même ou pour autrui s&rsquo;expose, notamment, aux sanctions prévues à l&rsquo;article 441-1 du code pénal, prévoyant des peines pouvant aller jusqu&rsquo;à trois ans d&rsquo;emprisonnement et 45 000 euros d&rsquo;amende.
             </p>
             <p>
                 L'Utilisateur s'engage à ne pas mettre en ligne de contenus ou informations contraires aux dispositions légales et réglementaires en vigueur.
             </p>
             <p>
-                Le contenu de l’Utilisateur peut être à tout moment et pour n’importe quelle raison supprimé ou modifié par le site, sans préavis.
+                Le contenu de l&rsquo;Utilisateur peut être à tout moment et pour n&rsquo;importe quelle raison supprimé ou modifié par le site, sans préavis.
             </p>
         </div>
 
         <div>
-            <div class="rf-grid-row rf-grid-row--gutter">
+            <div class="fr-grid-row fr-grid-row--gutter">
                 <h3 class="bleu-secondaire">Protection des données à caractère personnel</h3>
             </div>
             <h4>Responsable de traitement</h4>
             <p>
-                <strong>Création de l’espace personnel</strong>
+                <strong>Création de l&rsquo;espace personnel</strong>
             </p>
-            <p>Le responsable de traitement est l’Agence Nationale de la Cohésion des Territoires, « ANCT », représenté par Monsieur
+            <p>Le responsable de traitement est l&rsquo;Agence Nationale de la Cohésion des Territoires, « ANCT », représenté par Monsieur
                 Yves Le BRETON, Directeur général.
             </p>
             <p>
@@ -195,7 +232,7 @@
                 <ul class="list-dash">
                     <li>Données relatives aux personnes postulant au poste de conseiller numérique France Services (nom, prénom, situation socio-économique, adresse e-mail, numéro de téléphone)</li>
                     <li>Données relatives aux membres, personnels ou agents des structures (nom, prénom, fonction, adresse e-mail, téléphone)</li>
-                    <li>Données d’hébergeur ou de connexion ;</li>
+                    <li>Données d&rsquo;hébergeur ou de connexion ;</li>
                     <li>Cookies</li>
                 </ul>
             </p>
@@ -212,7 +249,7 @@
                 <strong>Bases juridiques des traitements de données</strong>
             </p>
             <p>
-                Les données traitées par la plateforme reposent sur l’exécution d’une mission d’intérêt public ou relevant de l’exercice de l’autorité publique dont est investi le responsable de traitement au sens de l’article 6-e du RPGD.
+                Les données traitées par la plateforme reposent sur l&rsquo;exécution d&rsquo;une mission d&rsquo;intérêt public ou relevant de l&rsquo;exercice de l&rsquo;autorité publique dont est investi le responsable de traitement au sens de l&rsquo;article 6-e du RPGD.
             </p>
             <p>
                 <strong>Ces fondements sont précisés ci-dessous :</strong>
@@ -221,22 +258,22 @@
                 <strong>a) Données relatives aux personnes postulant au poste de conseiller numérique France Services</strong>
             </p>
             <p>
-                Ce traitement est nécessaire à l’exécution d’une mission d’intérêt public ou relevant de l’exercice de l’autorité publique dont est investi le responsable de traitement au sens de l’article 6-e du règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données.
+                Ce traitement est nécessaire à l&rsquo;exécution d&rsquo;une mission d&rsquo;intérêt public ou relevant de l&rsquo;exercice de l&rsquo;autorité publique dont est investi le responsable de traitement au sens de l&rsquo;article 6-e du règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l&rsquo;égard du traitement des données à caractère personnel et à la libre circulation de ces données.
             </p>
             <p>
-                Cette mission d’intérêt public est notamment posée par le décret n°2019-1190 du 18 novembre 2019 relatif à l’Agence nationale de la cohésion des territoires.
+                Cette mission d&rsquo;intérêt public est notamment posée par le décret n°2019-1190 du 18 novembre 2019 relatif à l&rsquo;Agence nationale de la cohésion des territoires.
             </p>
             <p>
                 <strong>b) Données relatives aux membres, personnels ou agents des structures </strong>
             </p>
             <p>
-                Ce traitement est nécessaire à l’exécution d’une mission d’intérêt public ou relevant de l’exercice de l’autorité publique dont est investi le responsable de traitement au sens de l’article 6-e du règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données.
+                Ce traitement est nécessaire à l&rsquo;exécution d&rsquo;une mission d&rsquo;intérêt public ou relevant de l&rsquo;exercice de l&rsquo;autorité publique dont est investi le responsable de traitement au sens de l&rsquo;article 6-e du règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l&rsquo;égard du traitement des données à caractère personnel et à la libre circulation de ces données.
             </p>
             <p>
-                Cette mission d’intérêt public est notamment posée par le décret n°2019-1190 du 18 novembre 2019 relatif à l’Agence nationale de la cohésion des territoires.
+                Cette mission d&rsquo;intérêt public est notamment posée par le décret n°2019-1190 du 18 novembre 2019 relatif à l&rsquo;Agence nationale de la cohésion des territoires.
             </p>
             <p>
-                <strong>c) Données d’hébergeur ou de connexion</strong>
+                <strong>c) Données d&rsquo;hébergeur ou de connexion</strong>
             </p>
             <p>
                 Ce traitement est nécessaire au respect d'une obligation légale à laquelle le responsable de traitement est soumis au sens de l'article 6-c du Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données.
@@ -247,7 +284,7 @@
         </div>
 
         <div>
-            <div class="rf-grid-row rf-grid-row--gutter">
+            <div class="fr-grid-row fr-grid-row--gutter">
                 <h3 class="bleu-secondaire">Durée de conservation des traitements de données</h3>
             </div>
             <h4>La durée de conservation des données est la suivante :</h4>
@@ -270,7 +307,7 @@
                         <td>30 mois à compter de la réception du mail de confirmation</td>
                     </tr>
                     <tr>
-                        <td>Données d’hébergeur</td>
+                        <td>Données d&rsquo;hébergeur</td>
                         <td>1 an, conformément au décret n°2011-219 du 25 février 2011.</td>
                     </tr>
                     <tr>
@@ -291,13 +328,13 @@
             <p>
                 Vous disposez des droits suivants concernant vos données à caractère personnel :
                 <ul>
-                    <li>Droit d’information et droit d’accès aux données ;</li>
+                    <li>Droit d&rsquo;information et droit d&rsquo;accès aux données ;</li>
                     <li>Droit de rectification et le cas échéant de suppression des données ;</li>
                     <li>Droit au retrait du consentement en matière de cookies uniquement</li>
                 </ul>
             </p>
             <p>
-                Pour les exercer, faites-nous parvenir une demande en précisant la date et l’heure précise de la requête – ces éléments sont indispensables pour nous permettre de retrouver votre recherche –à l’adresse suivante :
+                Pour les exercer, faites-nous parvenir une demande en précisant la date et l&rsquo;heure précise de la requête – ces éléments sont indispensables pour nous permettre de retrouver votre recherche –à l&rsquo;adresse suivante :
             </p>
             <p>
                 <strong>Par voie numérique : <a href="mailto:dpo@anct.gouv.fr">dpo@anct.gouv.fr</a></strong>
@@ -310,19 +347,19 @@
                 <strong>75334 Paris Cedex 07</strong>
             </p>
             <p>
-                En raison de l’obligation de sécurité et de confidentialité dans le traitement des données à caractère personnel qui incombe au responsable de traitement, votre demande ne sera traitée que si vous apportez la preuve de votre identité.
+                En raison de l&rsquo;obligation de sécurité et de confidentialité dans le traitement des données à caractère personnel qui incombe au responsable de traitement, votre demande ne sera traitée que si vous apportez la preuve de votre identité.
 Pour vous aider dans votre démarche, vous trouverez ici <a href="https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces">https://www.cnil.fr/fr/modele/courrier/exercer-son-droit-dacces</a>, un modèle de courrier élaboré par la CNIL.
             </p>
             <p>
-                Le responsable de traitement s’engage à répondre dans un délai raisonnable qui ne saurait dépasser 1 mois à compter de la réception de votre demande.
+                Le responsable de traitement s&rsquo;engage à répondre dans un délai raisonnable qui ne saurait dépasser 1 mois à compter de la réception de votre demande.
             </p>
             <p><strong>Destinataires</strong></p>
             <p>
-                Le responsable de traitement s’engage à ce que les données à caractères personnels soient traitées par les seules personnes autorisées.
+                Le responsable de traitement s&rsquo;engage à ce que les données à caractères personnels soient traitées par les seules personnes autorisées.
             </p>
             <p><strong>Sous-traitants</strong></p>
             <p>
-                Certaines des données sont envoyées à des sous-traitants pour réaliser certaines missions. Le responsable de traitement s'est assuré de la mise en œuvre par ses sous-traitants de garanties adéquates et du respect de conditions strictes de confidentialité, d’usage et de protection des données.
+                Certaines des données sont envoyées à des sous-traitants pour réaliser certaines missions. Le responsable de traitement s'est assuré de la mise en œuvre par ses sous-traitants de garanties adéquates et du respect de conditions strictes de confidentialité, d&rsquo;usage et de protection des données.
 
                 <table class="conservation">
                     <tr>
@@ -353,63 +390,69 @@ Pour vous aider dans votre démarche, vous trouverez ici <a href="https://www.cn
                     </tr>
                 </table>
             </p>
-            <h4>Mise à jour des conditions d’utilisation</h4>
+            <h4>Mise à jour des conditions d&rsquo;utilisation</h4>
             <p>
-                Les termes des présentes conditions d’utilisation peuvent être amendés à tout moment, sans préavis, en fonction des modifications apportées à la plateforme, de l’évolution de la législation ou pour tout autre motif jugé nécessaire.
+                Les termes des présentes conditions d&rsquo;utilisation peuvent être amendés à tout moment, sans préavis, en fonction des modifications apportées à la plateforme, de l&rsquo;évolution de la législation ou pour tout autre motif jugé nécessaire.
             </p>
         </div>
     </div>
 
-    <!--FOOTER-->
-    <footer class="rf-footer" role="contentinfo" id="">
-        <div class="rf-container">
-          <div class="rf-footer__body">
-            <div class="rf-footer__brand" style="padding-left: 0.9rem;">
-              <div class="rf-footer__brand rf-sur-mesure" style="flex-basis: auto;">
-                <a href="/" title="République française" style="box-shadow: none;">
-                    <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
-                </a>
-              </div>
-              <div class="rf-footer__operator logo-conseiller-numerique-footer">
-                <img src="assets/img/logos/logo-france-relance-alt.svg" alt="logo France Relance" style="height: 70px; margin-bottom: 7px">
-              </div>
-            </div>
-            <div class="rf-footer__content" style="display: flex; justify-content: flex-end;">
-              <ul class="rf-footer__content-links" style="flex-direction: column;">
-                <li style="margin-right: 0">
-                  <a href="https://agence-cohesion-territoires.gouv.fr">Agence Nationale de la Cohésion des
-                    Territoires</a>
-                </li>
-                <li style="margin-right: 0">
-                  <a href="https://societenumerique.gouv.fr">Programme Société Numérique</a>
-                </li>
-                <li style="margin-right: 0">
-                  <a href="https://incubateur.anct.gouv.fr">Incubateur des territoires</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="rf-footer__bottom">
-            <ul class="rf-footer__bottom-list">
-              <li>
-                <a href="https://aide.conseiller-numerique.gouv.fr/fr/">FAQ</a>
-              </li>
-              <li>
-                <a href="accessibilite">Accessibilité : non conforme</a>
-              </li>
-              <li>
-                <a href="mentions-legales">Mentions légales</a>
-              </li>
-              <li>
-                <a href="https://cdn.conseiller-numerique.gouv.fr/CGU-Donn%C3%A9es_personnellesConseiller_Num%C3%A9rique.pdf">Conditions générales d'utilisation</a>
-              </li>
-            </ul>
-            <div class="rf-footer__bottom-copy">
-              © République Française 2021
-            </div>
-          </div>
+<!--FOOTER-->
+<footer class="fr-footer" role="contentinfo" id="footer">
+  <div class="fr-container">
+    <div class="fr-footer__body">
+      <div class="fr-footer__brand" style="padding-left: 0.9rem;">
+        <div class="fr-footer__brand fr-sur-mesure" style="flex-basis: auto;">
+          <a href="/" title="République française" style="box-shadow: none;">
+              <img src="assets/img/logos/logoRF.svg" width="96px" alt="République Française. Liberté Égalité Fraternité." class="header__logo-rf">
+          </a>
         </div>
-      </footer>
+        <div class="fr-footer__operator logo-conseiller-numerique-footer">
+          <img src="assets/img/logos/logo-france-relance-alt.svg" alt="logo France Relance" style="height: 70px; margin-bottom: 7px">
+        </div>
+      </div>
+      <div class="fr-footer__content" style="display: flex; justify-content: flex-end;">
+        <ul class="fr-footer__content-list" style="flex-direction: column;">
+            <li class="fr-footer__content-item">
+                <a class="fr-footer__content-link" href="https://agence-cohesion-territoires.gouv.fr">
+                  Agence Nationale de la Cohésion des Territoires</a>
+            </li>
+            <li class="fr-footer__content-item">
+                <a class="fr-footer__content-link" href="https://societenumerique.gouv.fr">
+                  Programme Société Numérique
+                </a>
+            </li>
+            <li class="fr-footer__content-item">
+                <a class="fr-footer__content-link" href="https://incubateur.anct.gouv.fr">
+                  Incubateur des territoires
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="fr-footer__bottom">
+      <ul class="fr-footer__bottom-list">
+          <li class="fr-footer__bottom-item">
+              <a class="fr-footer__bottom-link" href="https://aide.conseiller-numerique.gouv.fr/fr/">FAQ</a>
+          </li>
+          <li class="fr-footer__bottom-item">
+              <a class="fr-footer__bottom-link" href="accessibilite">Accessibilité : non conforme</a>
+          </li>
+          <li class="fr-footer__bottom-item">
+              <a class="fr-footer__bottom-link" href="mentions-legales">Mentions légales</a>
+          </li>
+          <li class="fr-footer__bottom-item">
+              <a class="fr-footer__bottom-link" href="https://cdn.conseiller-numerique.gouv.fr/CGU-Donn%C3%A9es_personnellesConseiller_Num%C3%A9rique.pdf">Conditions générales d'utilisation</a>
+          </li>
+      </ul>
+      <div class="fr-footer__bottom-copy">
+          <p>Sauf mention contraire, tous les textes de ce site sont sous <a href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noreferrer">licence etalab-2.0</a>
+          </p>
+      </div>
+  </div>
+  </div>
+</footer>
 
     <!-- Matomo -->
     <script type="text/javascript">
@@ -428,7 +471,8 @@ Pour vous aider dans votre démarche, vous trouverez ici <a href="https://www.cn
     <!-- End Matomo Code -->
 
     <script src="js/html5shiv.min.js"></script>
-    <script src="js/all.min.js"></script>
+    <script type="module" src="js/dsfr.module.min.js"></script>
+    <script type="text/javascript" nomodule src="js/dsfr.nomodule.min.js"></script>
 </body>
 
 </html>
