@@ -1,11 +1,11 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Déploiement en production
+name: Déploiement en recette
 
 on:
   push:
-    branches: [ main ]
+    branches: [ recette ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,7 +21,7 @@ jobs:
     - name: Deploy on clever cloud
       uses: 47ng/actions-clever-cloud@v1
       with:
-        appID: ${{ secrets.CLEVER_SITE_VITRINE_PRODUCTION }}
+        appID: ${{ secrets.CLEVER_SITE_VITRINE_RECETTE }}
       env:
         CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
         CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
